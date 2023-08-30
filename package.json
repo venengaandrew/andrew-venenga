@@ -14,9 +14,11 @@
   "dependencies": {
     "@headlessui/react": "^1.7.14",
     "@heroicons/react": "^2.0.17",
+    "@sendgrid/mail": "^7.7.0",
     "@vercel/analytics": "^1.0.1",
     "autoprefixer": "^10.4.14",
     "classnames": "^2.3.2",
+    "fs": "^0.0.1-security",
     "next": "^13.4.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -61,5 +63,10 @@
   },
   "resolutions": {
     "autoprefixer": "10.4.5"
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false
   }
 }

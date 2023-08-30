@@ -1,10 +1,14 @@
+import sgMail from '@sendgrid/mail';
 import {FC, memo, useCallback, useMemo, useState} from 'react';
+
 
 interface FormData {
   name: string;
   email: string;
   message: string;
 }
+
+sgMail.setApiKey(process.env.SENDGRID_API_KEY!);
 
 const ContactForm: FC = memo(() => {
   const defaultData = useMemo(
@@ -32,12 +36,29 @@ const ContactForm: FC = memo(() => {
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      /**
-       * This is a good starting point to wire up your form submission logic
-       * */
-      console.log('Data to send: ', data);
+
+      const {name, email, message} = data;
+
+      const msg = {
+        to: 'andrew@venenga.net',
+        from: email,
+        subject: `New message from ${name}`,
+        text: message,
+        html: `<p>${message}</p>`,
+      };
+
+      try {
+        await sgMail.send(msg);
+        console.log('Email sent successfully');
+      } catch (error) {
+        console.error(error);
+      }
+
+      setData(defaultData);
     },
-    [data],
+
+
+    [data, defaultData],
   );
 
   const inputClasses =
