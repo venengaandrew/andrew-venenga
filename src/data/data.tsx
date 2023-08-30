@@ -274,16 +274,20 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'April 2020',
+    location: 'Indian Hills Community College',
+    title: 'Software Development',
+    content: <p></p>,
   },
   {
     date: 'March 2003',
     location: 'School of Business',
     title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    content: <p> During my time at Indian Hills Community College, I got a solid education in modern programming languages and how to use them for web, mobile, and database development. 
+      I learned languages like Python, Java, JavaScript, and Swift, which helped me write efficient code and solve problems. Creating websites that work well and look good, and diving into making apps for both Android and iOS, gave me practical skills. 
+      I also learned how to work with databases effectively using SQL. Through working on group projects, 
+      I improved my teamwork and communication, and I built up a portfolio that showcases what I can do. 
+      All in all, this experience set me up with strong skills for a successful career in the tech world.</p>,
   },
 ];
 
