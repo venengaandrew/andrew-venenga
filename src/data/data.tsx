@@ -73,10 +73,11 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        If you find this early, congrats, this is the begining to my website resume! Please be advised this is a work in progress and not yet completed.
+        Welcome! this is the begining to my website resume! Please be advised this is a work in progress and not yet completed. 
+        TODO: Add more projects
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Iowa based <strong className="text-stone-100">System's Administrator + Software Developer</strong>, currently working
+        I'm an Iowa based <strong className="text-stone-100">System's Administrator + Software Developer</strong>, currently working
         at <strong className="text-stone-100">Aelieve Digital Marketing</strong> as the Director of IT, running Aelieve's MSP Division, while 
         maintaining Aelieve Digital Marketing Client's website and automations.
       </p>
