@@ -275,7 +275,7 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2020',
+    date: 'Augest 2019',
     location: 'Indian Hills Community College',
     title: 'Software Development',
     content: <p>During my time at Indian Hills Community College, I got a solid education in modern programming languages and how to use them for web, mobile, and database development. 
@@ -285,10 +285,16 @@ export const education: TimelineItem[] = [
     All in all, this experience set me up with strong skills for a successful career in the tech world.</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p> </p>,
+    date: 'Augest 2017',
+    location: 'Kirkwood Community College | Dual Enrollment, Washington High School',
+    title: 'General Computers and Networking',
+    content: 
+      <p>
+        During my time at Kirkwood Community College, I got a solid education in general computers and networking.
+        This was a dual enrollment program through Washington High School, where I was able to get a head start on my college education.
+        I refinded my knownedge of computers and networking, and learned how to use them in a business environment, instead of just in my own lab at home.
+        This also kickstarted my desire to advance my Home Lab, and learn more about the IT field.
+      </p>,
   },
 ];
 
