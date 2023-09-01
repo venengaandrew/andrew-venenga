@@ -208,7 +208,7 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
+    title: 'Live Streaming Website',
     description: 'Live Streaming site built with React and Node.js, this is a work in progress and not yet completed.',
     url: 'https://github.com/venengaandrew/drewvpopc-live',
     image: porfolioImage2,
