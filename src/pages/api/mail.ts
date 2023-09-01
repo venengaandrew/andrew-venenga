@@ -3,7 +3,7 @@ import type {NextApiRequest, NextApiResponse} from "next";
 
 
 
-sgMail.setApiKey('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');
+sgMail.setApiKey(process.env.SENDGRID_API_KEY!);
 
 type Data = {
   message: string;
