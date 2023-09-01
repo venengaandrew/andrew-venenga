@@ -202,9 +202,9 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Web Crawler',
+    description: 'Web Crawler designed to scrape google maps data for specific industries and locations.',
+    url: 'https://github.com/venengaandrew/Web-Crawler',
     image: porfolioImage1,
   },
   {
