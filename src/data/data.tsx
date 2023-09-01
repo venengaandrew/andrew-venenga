@@ -119,7 +119,7 @@ export const aboutData: About = {
     {label: 'Age', text: '23', Icon: CalendarIcon},
     {label: 'Nationality', text: 'American / German', Icon: FlagIcon},
     {label: 'Interests', text: 'PC Building, Live Streaming, Motorcycles, Hiking', Icon: SparklesIcon},
-    {label: 'Study', text: 'Indian Hills, Ottumwa, IA', Icon: AcademicCapIcon},
+    {label: 'Study', text: 'Indian Hills Community College, Ottumwa, IA', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Aelieve Digital Marketing', Icon: BuildingOffice2Icon},
   ],
 };
