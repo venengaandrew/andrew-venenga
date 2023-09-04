@@ -72,7 +72,7 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
 
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Andrew Venenga.`,
+  name: `Andrew Venenga.`,
   description: (
     <>
       <LazyLoad height={200}>
