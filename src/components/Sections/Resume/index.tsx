@@ -1,4 +1,4 @@
-import {FC, memo} from 'react';
+import {FC, memo, useEffect,useState} from 'react';
 
 import {education, experience, SectionId, skills} from '../../../data/data';
 import Section from '../../Layout/Section';
@@ -7,6 +7,26 @@ import {SkillGroup} from './Skills';
 import TimelineItem from './TimelineItem';
 
 const Resume: FC = memo(() => {
+  const [isRestoring, setIsRestoring] = useState(false);
+
+  useEffect(() => {
+    const handlePageShow = (event: PageTransitionEvent) => {
+      if (event.persisted) {
+        setIsRestoring(true);
+      }
+    };
+
+    window.addEventListener('pageshow', handlePageShow);
+
+    return () => {
+      window.removeEventListener('pageshow', handlePageShow);
+    };
+  }, []);
+
+  if (isRestoring) {
+    return null; // Skip rendering the section if restoring from bfcache
+  }
+
   return (
     <Section className="bg-neutral-100" sectionId={SectionId.Resume}>
       <div className="flex flex-col divide-y-2 divide-neutral-300">
