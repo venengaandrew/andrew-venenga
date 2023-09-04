@@ -82,7 +82,7 @@ export const heroData: Hero = {
       </p>
       </LazyLoad>
       <LazyLoad height={200}>
-        <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        <p>
           I'm an Iowa based <strong className="text-stone-100">System's Administrator + Software Developer</strong>, currently working
           at <strong className="text-stone-100">Aelieve Digital Marketing</strong> as the Director of IT, running Aelieve's MSP Division, while 
           maintaining Aelieve Digital Marketing Client's website and automations.
