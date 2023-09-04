@@ -75,15 +75,15 @@ export const heroData: Hero = {
   name: `Andrew Venenga.`,
   description: (
     <>
-      <LazyLoad height={200}>
+      
       <p>
         Welcome! this is the begining to my website resume! Please be advised this is a work in progress and not yet completed. 
         TODO: Add more projects
       </p>
-      </LazyLoad>
+      
       <LazyLoad height={200}>
         <p>
-          I'm an Iowa based <strong className="text-stone-100">System's Administrator + Software Developer</strong>, currently working
+          I'm an Iowa based <strong className="text-stone-100">System's Administrator</strong> and <strong className="text-stone-100">Software Developer</strong>, currently working
           at <strong className="text-stone-100">Aelieve Digital Marketing</strong> as the Director of IT, running Aelieve's MSP Division, while 
           maintaining Aelieve Digital Marketing Client's website and automations.
         </p>
