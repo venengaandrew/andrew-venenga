@@ -76,7 +76,7 @@ export const heroData: Hero = {
   description: (
     <>
       <LazyLoad height={200}>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+      <p>
         Welcome! this is the begining to my website resume! Please be advised this is a work in progress and not yet completed. 
         TODO: Add more projects
       </p>
@@ -89,7 +89,7 @@ export const heroData: Hero = {
         </p>
       </LazyLoad>
       <LazyLoad height={200}>
-        <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        <p>
           In my free time time, you can catch me streaming on <strong className="text-stone-100">My MultiCasting Platform</strong>,
           sharpening my <strong className="text-stone-100">DevOp's Skills</strong>, or finding new adventures with my{' '}
           <strong className="text-stone-100">Friends and Family</strong>.
