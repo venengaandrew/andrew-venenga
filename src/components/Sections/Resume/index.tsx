@@ -1,5 +1,6 @@
 
-import {Analytics} from '@vercel/analytics/react'
+
+import {Analytics} from '@vercel/analytics/react';
 import {FC, memo, useEffect,useState} from 'react';
 
 import {education, experience, SectionId, skills} from '../../../data/data';
