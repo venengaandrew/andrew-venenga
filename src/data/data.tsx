@@ -7,6 +7,7 @@ import {
   MapIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
+import LazyLoad from 'react-lazyload';
 
 import GithubIcon from '../components/Icon/GithubIcon';
 // import InstagramIcon from '../components/Icon/InstagramIcon';
@@ -67,6 +68,8 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
 /**
  * Hero section
  */
+
+
 export const heroData: Hero = {
   imageSrc: heroImage,
   name: `I'm Andrew Venenga.`,
@@ -76,16 +79,20 @@ export const heroData: Hero = {
         Welcome! this is the begining to my website resume! Please be advised this is a work in progress and not yet completed. 
         TODO: Add more projects
       </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm an Iowa based <strong className="text-stone-100">System's Administrator + Software Developer</strong>, currently working
-        at <strong className="text-stone-100">Aelieve Digital Marketing</strong> as the Director of IT, running Aelieve's MSP Division, while 
-        maintaining Aelieve Digital Marketing Client's website and automations.
-      </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me streaming on <strong className="text-stone-100">My MultiCasting Platform</strong>,
-        sharpening my <strong className="text-stone-100">DevOp's Skills</strong>, or finding new adventures with my{' '}
-        <strong className="text-stone-100">Friends and Family</strong>.
-      </p>
+      <LazyLoad height={200}>
+        <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+          I'm an Iowa based <strong className="text-stone-100">System's Administrator + Software Developer</strong>, currently working
+          at <strong className="text-stone-100">Aelieve Digital Marketing</strong> as the Director of IT, running Aelieve's MSP Division, while 
+          maintaining Aelieve Digital Marketing Client's website and automations.
+        </p>
+      </LazyLoad>
+      <LazyLoad height={200}>
+        <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+          In my free time time, you can catch me streaming on <strong className="text-stone-100">My MultiCasting Platform</strong>,
+          sharpening my <strong className="text-stone-100">DevOp's Skills</strong>, or finding new adventures with my{' '}
+          <strong className="text-stone-100">Friends and Family</strong>.
+        </p>
+      </LazyLoad>
     </>
   ),
   actions: [
