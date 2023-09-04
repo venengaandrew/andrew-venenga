@@ -1,5 +1,6 @@
-import {FC, memo, useEffect,useState} from 'react';
 
+import {FC, memo, useEffect,useState} from 'react';
+import {Analytics} from '@vercel/analytics/react'
 import {education, experience, SectionId, skills} from '../../../data/data';
 import Section from '../../Layout/Section';
 import ResumeSection from './ResumeSection';
@@ -49,6 +50,7 @@ const Resume: FC = memo(() => {
           </div>
         </ResumeSection>
       </div>
+      <Analytics />
     </Section>
   );
 });
