@@ -75,10 +75,12 @@ export const heroData: Hero = {
   name: `I'm Andrew Venenga.`,
   description: (
     <>
+      <LazyLoad height={200}>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         Welcome! this is the begining to my website resume! Please be advised this is a work in progress and not yet completed. 
         TODO: Add more projects
       </p>
+      </LazyLoad>
       <LazyLoad height={200}>
         <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
           I'm an Iowa based <strong className="text-stone-100">System's Administrator + Software Developer</strong>, currently working
