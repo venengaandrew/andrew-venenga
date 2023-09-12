@@ -76,20 +76,20 @@ export const heroData: Hero = {
   description: (
     <>
       
-      <p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         Welcome! this is the begining to my website resume! Please be advised this is a work in progress and not yet completed. 
         TODO: Add more projects
       </p>
       
       <LazyLoad height={200}>
-        <p>
+        <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
           I'm an Iowa based <strong className="text-stone-100">System's Administrator</strong> and <strong className="text-stone-100">Software Developer</strong>, currently working
           at <strong className="text-stone-100">Aelieve Digital Marketing</strong> as the Director of IT, running Aelieve's MSP Division, while 
           maintaining Aelieve Digital Marketing Client's website and automations.
         </p>
       </LazyLoad>
       <LazyLoad height={200}>
-        <p>
+        <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
           In my free time time, you can catch me streaming on <strong className="text-stone-100">My MultiCasting Platform</strong>,
           sharpening my <strong className="text-stone-100">DevOp's Skills</strong>, or finding new adventures with my{' '}
           <strong className="text-stone-100">Friends and Family</strong>.
