@@ -77,14 +77,14 @@ export const heroData: Hero = {
     <>
       
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Welcome! this is the begining to my website resume! Please be advised this is a work in progress and not yet completed. 
+        Welcome! This is the begining to my website resume! Please be advised this is a work in progress and not yet completed.
         TODO: Add more projects
       </p>
       
       <LazyLoad height={200}>
         <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-          I'm an Iowa based <strong className="text-stone-100">System's Administrator</strong> and <strong className="text-stone-100">Software Developer</strong>, currently working
-          at <strong className="text-stone-100">Aelieve Digital Marketing</strong> as the Director of IT, running Aelieve's MSP Division, while 
+          I'm an Iowa based <strong className="text-stone-100">System's Administrator</strong> and <strong className="text-stone-100">Software Developer</strong>. I currently working
+          at <strong className="text-stone-100">Aelieve Digital Marketing</strong> as the Director of IT, running Aelieve's MSP Division, while
           maintaining Aelieve Digital Marketing Client's website and automations.
         </p>
       </LazyLoad>
@@ -117,7 +117,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Self Self taught developer with a passion for learning new technologies and building useful products.
+  description: `Self taught developer with a passion for learning new technologies and building useful products.
   I have a strong background in systems administration and software development. I am currently working as the Director of IT Operations at Aelieve Digital Marketing,
   where I am responsible for the development and maintenance of Aelieve's on-premise digital marketing platform and DevOps process.
   I am also responsible for the maintenance and onboarding of new customers to the platform.
@@ -284,7 +284,7 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'Augest 2019',
+    date: 'August 2019',
     location: 'Indian Hills Community College',
     title: 'Software Development',
     content: <p>During my time at Indian Hills Community College, I got a solid education in modern programming languages and how to use them for web, mobile, and database development. 
@@ -294,7 +294,7 @@ export const education: TimelineItem[] = [
     All in all, this experience set me up with strong skills for a successful career in the tech world.</p>,
   },
   {
-    date: 'Augest 2017',
+    date: 'August 2017',
     location: 'Kirkwood Community College | Dual Enrollment, Washington High School',
     title: 'General Computers and Networking',
     content: 
