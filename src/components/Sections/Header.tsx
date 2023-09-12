@@ -90,12 +90,12 @@ const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}
             <Transition.Child
               as={Fragment}
               enter="transition ease-in-out duration-300 transform"
-              enterFrom="-translate-x-full"
+              enterFrom="translate-x-full"
               enterTo="translate-x-0"
               leave="transition ease-in-out duration-300 transform"
               leaveFrom="translate-x-0"
-              leaveTo="-translate-x-full">
-              <div className="relative w-4/5 bg-stone-800">
+              leaveTo="translate-x-full">
+              <div className="fixed inset-y-0 right-[-50px] w-4/5 bg-stone-800">
                 <nav className="mt-5 flex flex-col gap-y-2 px-2">
                   {navSections.map(section => (
                     <NavItem

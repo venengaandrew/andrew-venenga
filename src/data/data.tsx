@@ -75,12 +75,10 @@ export const heroData: Hero = {
   name: `Andrew Venenga.`,
   description: (
     <>
-      
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         Welcome! This is the begining to my website resume! Please be advised this is a work in progress and not yet completed.
         TODO: Add more projects
       </p>
-      
       <LazyLoad height={200}>
         <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
           I'm an Iowa based <strong className="text-stone-100">System's Administrator</strong> and <strong className="text-stone-100">Software Developer</strong>. I currently working
@@ -297,7 +295,7 @@ export const education: TimelineItem[] = [
     date: 'August 2017',
     location: 'Kirkwood Community College | Dual Enrollment, Washington High School',
     title: 'General Computers and Networking',
-    content: 
+    content:
       <p>
         During my time at Kirkwood Community College, I got a solid education in general computers and networking.
         This was a dual enrollment program through Washington High School, where I was able to get a head start on my college education.
