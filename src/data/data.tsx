@@ -288,9 +288,9 @@ export const education: TimelineItem[] = [
     location: 'Indian Hills Community College',
     title: 'Software Development',
     content: <p>During my time at Indian Hills Community College, I got a solid education in modern programming languages and how to use them for web, mobile, and database development. 
-    I learned languages like Python, Java, JavaScript, and Swift, which helped me write efficient code and solve problems. Creating websites that work well and look good, and diving into making apps for both Android and iOS, gave me practical skills. 
-    I also learned how to work with databases effectively using SQL. Through working on group projects, 
-    I improved my teamwork and communication, and I built up a portfolio that showcases what I can do. 
+    I've learned languages such as Python, Java, JavaScript, and Swift, which helped me write efficient code and solve problems. I have created websites for clients that are optimized well with a professional design, and diving into making apps for both Android and iOS, gave me practical skills. 
+    I also learned how to work with databases effectively using SQL. Through working on group projects,
+    I improved my teamwork and communication, and I built up a portfolio that showcases what I can do.
     All in all, this experience set me up with strong skills for a successful career in the tech world.</p>,
   },
   {
@@ -301,7 +301,7 @@ export const education: TimelineItem[] = [
       <p>
         During my time at Kirkwood Community College, I got a solid education in general computers and networking.
         This was a dual enrollment program through Washington High School, where I was able to get a head start on my college education.
-        I refinded my knownedge of computers and networking, and learned how to use them in a business environment, instead of just in my own lab at home.
+        I refined my knowledge of computers and networking, and learned how to use them in a business environment, instead of just in my own lab at home.
         This also kickstarted my desire to advance my Home Lab, and learn more about the IT field.
       </p>,
   },
