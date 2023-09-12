@@ -117,7 +117,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Self Self taught developer with a passion for learning new technologies and building useful products.
+  description: `Self taught developer with a passion for learning new technologies and building useful products.
   I have a strong background in systems administration and software development. I am currently working as the Director of IT Operations at Aelieve Digital Marketing,
   where I am responsible for the development and maintenance of Aelieve's on-premise digital marketing platform and DevOps process.
   I am also responsible for the maintenance and onboarding of new customers to the platform.
