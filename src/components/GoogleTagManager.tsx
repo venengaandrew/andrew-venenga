@@ -8,14 +8,14 @@ interface GoogleTagManagerProps {
     children?: ReactNode;
   }
   const GoogleTagManager: React.FC<GoogleTagManagerProps> = memo(({children}) => {
-    ReactGA.initialize('GTM-XXXX'); // Replace 'GTM-XXXX' with your actual GTM Container ID
+    ReactGA.initialize('GTM-NVFKZMDS'); // Replace 'GTM-XXXX' with your actual GTM Container ID
     return (
       <>
         {/* Paste the GTM code snippets here */}
         {/* Replace 'GTM-XXXX' with your actual GTM Container ID */}
         {/* Google Tag Manager (head) */}
         <Script
-          src="https://www.googletagmanager.com/gtm.js?id=GTM-XXXX"
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-NVFKZMDS"
           strategy="lazyOnload"
         />
         {/* End Google Tag Manager (head) */}
@@ -23,7 +23,7 @@ interface GoogleTagManagerProps {
         <noscript>
           <iframe
             height="0"
-            src="https://www.googletagmanager.com/ns.html?id=GTM-XXXX"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-NVFKZMDS"
             style={{display: 'none', visibility: 'hidden'}}
             width="0"
           />
@@ -31,7 +31,7 @@ interface GoogleTagManagerProps {
         {/* End Google Tag Manager (body) */}
         {/* Google Analytics */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+          src="https://www.googletagmanager.com/gtag/js?id=G-Q5ESPQFWD8"
           strategy="lazyOnload"
         />
         <PageViewTracker /> {/* Add the PageViewTracker component */}
