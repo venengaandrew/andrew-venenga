@@ -26,6 +26,10 @@ const GoogleTagManager: React.FC<GoogleTagManagerProps> = memo(({children}) => (
             />
         </noscript>
         {/* End Google Tag Manager (body) */}
+        <Script
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q5ESPQFWD8"
+            strategy="lazyOnload"
+        />
         {children}
     </>
 ));
