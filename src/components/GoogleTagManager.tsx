@@ -2,7 +2,6 @@ import Script from 'next/script';
 import React, {memo,ReactNode} from 'react';
 import ReactGA from 'react-ga';
 
-import PageViewTracker from './PageViewTracker';
 
 interface GoogleTagManagerProps {
     children?: ReactNode;
