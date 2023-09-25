@@ -14,7 +14,7 @@ interface GoogleTagManagerProps {
         {/* Replace 'GTM-XXXX' with your actual GTM Container ID */}
         {/* Google Tag Manager (head) */}
         <Script
-          src="https://www.googletagmanager.com/gtm.js?id=GTM-NVFKZMDS"
+          src="https://www.googletagmanager.com/gtm.js?id=G-MSSPKY60PN"
           strategy="lazyOnload"
         />
         {/* End Google Tag Manager (head) */}
@@ -22,7 +22,7 @@ interface GoogleTagManagerProps {
         <noscript>
           <iframe
             height="0"
-            src="https://www.googletagmanager.com/ns.html?id=GTM-NVFKZMDS"
+            src="https://www.googletagmanager.com/ns.html?id=G-MSSPKY60PN"
             style={{display: 'none', visibility: 'hidden'}}
             width="0"
           />
