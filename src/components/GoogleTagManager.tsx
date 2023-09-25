@@ -14,7 +14,7 @@ interface GoogleTagManagerProps {
         {/* Replace 'GTM-XXXX' with your actual GTM Container ID */}
         {/* Google Tag Manager (head) */}
         <Script
-          src="https://www.googletagmanager.com/gtm.js?id=G-MSSPKY60PN"
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-NVFKZMDS"
           strategy="lazyOnload"
         />
         {/* End Google Tag Manager (head) */}
