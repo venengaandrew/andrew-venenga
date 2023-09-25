@@ -30,7 +30,7 @@ interface GoogleTagManagerProps {
         {/* End Google Tag Manager (body) */}
         {/* Google Analytics */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-Q5ESPQFWD8"
+          src="https://www.googletagmanager.com/gtag/js?id=G-MSSPKY60PN"
           strategy="lazyOnload"
         />
         <Script id="ga-script" strategy="lazyOnload">
@@ -38,7 +38,7 @@ interface GoogleTagManagerProps {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-Q5ESPQFWD8');
+            gtag('config', 'G-MSSPKY60PN');
           `}
         </Script>
         {/* End Google Analytics */}
