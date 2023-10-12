@@ -20,7 +20,7 @@
     "analytics": "^0.8.9",
     "autoprefixer": "10.4.15",
     "classnames": "^2.3.2",
-    "fs": "^0.0.1-security",
+    "fs": "^0.0.2",
     "next": "^13.5.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
