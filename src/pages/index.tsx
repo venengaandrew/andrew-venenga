@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic';
+import Script from 'next/script'
 import {FC, memo} from 'react';
 
-import GoogleTagManager from '../components/GoogleTagManager';
 import Page from '../components/Layout/Page';
 import About from '../components/Sections/About';
 import Contact from '../components/Sections/Contact';
@@ -18,8 +18,19 @@ const Header = dynamic(() => import('../components/Sections/Header'), {ssr: fals
 const Home: FC = memo(() => {
   const {title, description} = homePageMeta;
   return (
-    <><GoogleTagManager />
-      <Page description={description} title={title}>
+    <Page description={description} title={title}>
+      <div className="container">
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-MSSPKY60PN" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-MSSPKY60PN');
+        `}
+      </Script>
+      </div>
       <Header />
       <Hero />
       <About />
@@ -28,7 +39,7 @@ const Home: FC = memo(() => {
       <Testimonials />
       <Contact />
       <Footer />
-    </Page></>
+    </Page>
   );
 });
 
