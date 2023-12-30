@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic';
-import Script from 'next/script'
+
 import {FC, memo} from 'react';
 
 import Page from '../components/Layout/Page';
