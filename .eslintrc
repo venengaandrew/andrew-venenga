@@ -10,6 +10,7 @@
   },
   "plugins": ["@typescript-eslint", "simple-import-sort", "import", "react", "react-memo", "react-hooks"],
   "extends": [
+		"next",
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
