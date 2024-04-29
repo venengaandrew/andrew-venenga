@@ -98,7 +98,7 @@ const ContactForm = React.memo(() => {
                 value={values.message}
             />
             <button
-        className="mt-4 w-full rounded-md bg-blue-600 py-3 px-5 text-lg text-white outline-none hover:bg-blue-800 disabled:cursor-not-allowed disabled:bg-opacity-60"
+        className="mt-4 w-full rounded-md bg-orange-500 py-3 px-5 text-lg text-white outline-none hover:bg-orange-700 disabled:cursor-not-allowed disabled:bg-opacity-60"
         disabled={loading}
         type="submit"
       >
