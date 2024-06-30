@@ -26,10 +26,11 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
         <meta content={title} property="og:title" />
         <meta content={description} property="og:description" />
         <meta content={`https://andrew.vennega.net${pathname}`} property="og:url" />
+        <meta content="Andrew Venenga's Resume" property="og:site_name" />
 
         {/* Twitter: https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup */}
-        <meta content={title} name="twitter:title" />
-        <meta content={description} name="twitter:description" />
+        <meta content="TBD" name="twitter:title" />
+        <meta content="TBD" name="twitter:description" />
       </Head>
       {children}
     </>
