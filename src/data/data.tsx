@@ -63,12 +63,11 @@ export const SectionId = {
   Testimonials: 'testimonials',
 } as const;
 
-export type SectionId = typeof SectionId[keyof typeof SectionId];
+export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 
 /**
  * Hero section
  */
-
 
 export const heroData: Hero = {
   imageSrc: heroImage,
@@ -76,20 +75,22 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Welcome! This is the begining to my website resume! Please be advised this is a work in progress and not yet completed.
-        TODO: Add more projects
+        Welcome! This is the begining to my website resume! Please be advised this is a work in progress and not yet
+        completed. TODO: Add more projects
       </p>
       <LazyLoad height={200}>
         <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-          I'm an Iowa based <strong className="text-stone-100">System's Administrator</strong> and <strong className="text-stone-100">Software Developer</strong>. I currently working
-          at <strong className="text-stone-100">Aelieve Digital Marketing</strong> as the Director of IT, running Aelieve's MSP Division, while
-          maintaining Aelieve Digital Marketing Client's website and automations.
+          I'm an Iowa based <strong className="text-stone-100">System's Administrator</strong> and{' '}
+          <strong className="text-stone-100">Software Developer</strong>. I currently working at{' '}
+          <strong className="text-stone-100">Aelieve Digital Marketing</strong> as the Director of IT, running Aelieve's
+          MSP Division, while maintaining Aelieve Digital Marketing Client's website and automations.
         </p>
       </LazyLoad>
       <LazyLoad height={200}>
         <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-          In my free time time, you can catch me streaming on <strong className="text-stone-100">My MultiCasting Platform</strong>,
-          sharpening my <strong className="text-stone-100">DevOp's Skills</strong>, or finding new adventures with my{' '}
+          In my free time time, you can catch me streaming on{' '}
+          <strong className="text-stone-100">My MultiCasting Platform</strong>, sharpening my{' '}
+          <strong className="text-stone-100">DevOp's Skills</strong>, or finding new adventures with my{' '}
           <strong className="text-stone-100">Friends and Family</strong>.
         </p>
       </LazyLoad>
@@ -149,7 +150,7 @@ export const skills: SkillGroup[] = [
       {
         name: 'Azure',
         level: 10,
-      }
+      },
     ],
   },
   {
@@ -285,23 +286,31 @@ export const education: TimelineItem[] = [
     date: 'August 2019',
     location: 'Indian Hills Community College',
     title: 'Software Development',
-    content: <p>During my time at Indian Hills Community College, I got a solid education in modern programming languages and how to use them for web, mobile, and database development. 
-    I've learned languages such as Python, Java, JavaScript, and Swift, which helped me write efficient code and solve problems. I have created websites for clients that are optimized well with a professional design, and diving into making apps for both Android and iOS, gave me practical skills. 
-    I also learned how to work with databases effectively using SQL. Through working on group projects,
-    I improved my teamwork and communication, and I built up a portfolio that showcases what I can do.
-    All in all, this experience set me up with strong skills for a successful career in the tech world.</p>,
+    content: (
+      <p>
+        During my time at Indian Hills Community College, I got a solid education in modern programming languages and
+        how to use them for web, mobile, and database development. I've learned languages such as Python, Java,
+        JavaScript, and Swift, which helped me write efficient code and solve problems. I have created websites for
+        clients that are optimized well with a professional design, and diving into making apps for both Android and
+        iOS, gave me practical skills. I also learned how to work with databases effectively using SQL. Through working
+        on group projects, I improved my teamwork and communication, and I built up a portfolio that showcases what I
+        can do. All in all, this experience set me up with strong skills for a successful career in the tech world.
+      </p>
+    ),
   },
   {
     date: 'August 2017',
     location: 'Kirkwood Community College | Dual Enrollment, Washington High School',
     title: 'General Computers and Networking',
-    content:
+    content: (
       <p>
-        During my time at Kirkwood Community College, I got a solid education in general computers and networking.
-        This was a dual enrollment program through Washington High School, where I was able to get a head start on my college education.
-        I refined my knowledge of computers and networking, and learned how to use them in a business environment, instead of just in my own lab at home.
-        This also kickstarted my desire to advance my Home Lab, and learn more about the IT field.
-      </p>,
+        During my time at Kirkwood Community College, I got a solid education in general computers and networking. This
+        was a dual enrollment program through Washington High School, where I was able to get a head start on my college
+        education. I refined my knowledge of computers and networking, and learned how to use them in a business
+        environment, instead of just in my own lab at home. This also kickstarted my desire to advance my Home Lab, and
+        learn more about the IT field.
+      </p>
+    ),
   },
 ];
 
@@ -312,12 +321,13 @@ export const experience: TimelineItem[] = [
     title: 'Director of IT Operations',
     content: (
       <p>
-        Empowering small to midsized organizations to leverage technology in the evolution of their digital brand and marketing strategy. 
-        Developed, designed and delivered the Aelieve on-premise digital marketing platform and DevOps process to support the customer’s digital transformation. Led team to maintain and onboard new customers delivering 
-        the highest level of customer service while catering to their individual needs and customizations
+        Empowering small to midsized organizations to leverage technology in the evolution of their digital brand and
+        marketing strategy. Developed, designed and delivered the Aelieve on-premise digital marketing platform and
+        DevOps process to support the customer’s digital transformation. Led team to maintain and onboard new customers
+        delivering the highest level of customer service while catering to their individual needs and customizations
       </p>
     ),
-  }
+  },
 ];
 
 /**
