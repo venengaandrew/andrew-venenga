@@ -165,7 +165,7 @@ export const skills: SkillGroup[] = [
         level: 7,
       },
       {
-        name: 'GraphQL',
+        name: 'Vue.js',
         level: 6,
       },
     ],
@@ -337,9 +337,9 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Carolyn Simon, SHRM-CP | Former HR Manager at Aelieve Digital Marketing',
+      text: 'Overall, Andrew is a dedicated and hardworking professional who is committed to delivering exceptional results. His ability to problem solve, handle a new business, multitask, and his passion for his work make him a valuable asset to any team. I wholeheartedly recommend him for any role in IT operations or data anlysis.',
+      image: 'https://ijjzlsyfrxnrmjtxsvvj.supabase.co/storage/v1/object/public/andrew-venenga/carolyn-linkedin.jpeg?t=2024-06-30T00%3A26%3A15.364Z',
     },
     {
       name: 'Jane Doe',
