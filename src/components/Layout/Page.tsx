@@ -15,7 +15,7 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
         <meta content={description} name="description" />
 
         {/* several domains list the same content, make sure google knows we mean this one. */}
-        <link href={`https://reactresume.com${pathname}`} key="canonical" rel="canonical" />
+        <link href={`https://andrew.vennega.net${pathname}`} key="canonical" rel="canonical" />
 
         <link href="/favicon.ico" rel="icon" sizes="any" />
         <link href="/icon.svg" rel="icon" type="image/svg+xml" />
@@ -25,11 +25,12 @@ const Page: NextPage<PropsWithChildren<HomepageMeta>> = memo(({children, title, 
         {/* Open Graph : https://ogp.me/ */}
         <meta content={title} property="og:title" />
         <meta content={description} property="og:description" />
-        <meta content={`https://reactresume.com${pathname}`} property="og:url" />
+        <meta content={`https://andrew.vennega.net${pathname}`} property="og:url" />
+        <meta content="Andrew Venenga's Resume" property="og:site_name" />
 
         {/* Twitter: https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup */}
-        <meta content={title} name="twitter:title" />
-        <meta content={description} name="twitter:description" />
+        <meta content="TBD" name="twitter:title" />
+        <meta content="TBD" name="twitter:description" />
       </Head>
       {children}
     </>

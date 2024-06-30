@@ -3,15 +3,15 @@ import '../globalStyles.scss';
 
 import {SpeedInsights} from '@vercel/speed-insights/next';
 import type {AppProps} from 'next/app';
-import Head from "next/head";
-import Script from "next/script";
+import Head from 'next/head';
+import Script from 'next/script';
 import {memo} from 'react';
 
 const MyApp = memo(({Component, pageProps}: AppProps): JSX.Element => {
   return (
     <>
       <Head>
-      <script
+        <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -36,15 +36,12 @@ const MyApp = memo(({Component, pageProps}: AppProps): JSX.Element => {
                     y.parentNode.insertBefore(t,y);
                 })(window, document, "clarity", "script", "kmvelopnio");`,
           }}
-        />;
-        <title>Welcome!</title>
+        />
+        ;<title>Welcome!</title>
         <meta content="initial-scale=1, width=device-width" name="viewport" />
       </Head>
       {/* Global Site Tag (gtag.js) - Google Analytics */}
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-MSSPKY60PN"
-        strategy="afterInteractive"
-      />
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-MSSPKY60PN" strategy="afterInteractive" />
       <Component {...pageProps} />
       <SpeedInsights />
     </>

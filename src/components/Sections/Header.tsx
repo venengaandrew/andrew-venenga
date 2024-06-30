@@ -75,43 +75,49 @@ const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}
           <Bars3BottomRightIcon className="h-8 w-8 text-white" />
           <span className="sr-only">Open sidebar</span>
         </button>
-        <Transition.Root as={Fragment} show={isOpen}>
-          <Dialog as="div" className="fixed inset-0 z-40 flex sm:hidden" onClose={toggleOpen}>
-            <Transition.Child
-              as={Fragment}
-              enter="transition-opacity ease-linear duration-300"
-              enterFrom="opacity-0"
-              enterTo="opacity-100"
-              leave="transition-opacity ease-linear duration-300"
-              leaveFrom="opacity-100"
-              leaveTo="opacity-0">
-              <Dialog.Overlay className="fixed inset-0 bg-stone-900 bg-opacity-75" />
-            </Transition.Child>
-            <Transition.Child
-              as={Fragment}
-              enter="transition ease-in-out duration-300 transform"
-              enterFrom="translate-x-full"
-              enterTo="translate-x-0"
-              leave="transition ease-in-out duration-300 transform"
-              leaveFrom="translate-x-0"
-              leaveTo="translate-x-full">
-              <div className="fixed inset-y-0 right-[-50px] w-4/5 bg-stone-800">
-                <nav className="mt-5 flex flex-col gap-y-2 px-2">
-                  {navSections.map(section => (
-                    <NavItem
-                      activeClass={activeClass}
-                      current={section === currentSection}
-                      inactiveClass={inactiveClass}
-                      key={section}
-                      onClick={toggleOpen}
-                      section={section}
-                    />
-                  ))}
-                </nav>
+        <Transition as={Fragment} show={isOpen}>
+          <Dialog as="div" className="fixed inset-0 z-40 overflow-hidden" onClose={toggleOpen}>
+            <div className="absolute inset-0 overflow-hidden">
+              <Transition.Child
+                as={Fragment}
+                enter="ease-in-out duration-300"
+                enterFrom="opacity-0"
+                enterTo="opacity-100"
+                leave="ease-in-out duration-300"
+                leaveFrom="opacity-100"
+                leaveTo="opacity-0">
+                <div className="absolute inset-0 bg-stone-900 bg-opacity-75" />
+              </Transition.Child>
+              <div className="fixed inset-y-0 right-0 flex max-w-full">
+                <Transition.Child
+                  as={Fragment}
+                  enter="transform transition ease-in-out duration-300 sm:duration-500"
+                  enterFrom="translate-x-full"
+                  enterTo="translate-x-0"
+                  leave="transform transition ease-in-out duration-300 sm:duration-500"
+                  leaveFrom="translate-x-0"
+                  leaveTo="translate-x-full">
+                  <div className="relative w-screen max-w-md">
+                    <div className="h-full flex flex-col py-6 bg-stone-800 shadow-xl overflow-y-scroll">
+                      <nav className="mt-5 flex flex-col gap-y-2 px-2">
+                        {navSections.map(section => (
+                          <NavItem
+                            activeClass={activeClass}
+                            current={section === currentSection}
+                            inactiveClass={inactiveClass}
+                            key={section}
+                            onClick={toggleOpen}
+                            section={section}
+                          />
+                        ))}
+                      </nav>
+                    </div>
+                  </div>
+                </Transition.Child>
               </div>
-            </Transition.Child>
+            </div>
           </Dialog>
-        </Transition.Root>
+        </Transition>
       </>
     );
   },
