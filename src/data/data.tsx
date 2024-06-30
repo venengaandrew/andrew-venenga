@@ -339,7 +339,8 @@ export const testimonial: TestimonialSection = {
     {
       name: 'Carolyn Simon, SHRM-CP | Former HR Manager at Aelieve Digital Marketing',
       text: 'Overall, Andrew is a dedicated and hardworking professional who is committed to delivering exceptional results. His ability to problem solve, handle a new business, multitask, and his passion for his work make him a valuable asset to any team. I wholeheartedly recommend him for any role in IT operations or data anlysis.',
-      image: 'https://ijjzlsyfrxnrmjtxsvvj.supabase.co/storage/v1/object/public/andrew-venenga/carolyn-linkedin.jpeg?t=2024-06-30T00%3A26%3A15.364Z',
+      image:
+        'https://ijjzlsyfrxnrmjtxsvvj.supabase.co/storage/v1/object/public/andrew-venenga/carolyn-linkedin.jpeg?t=2024-06-30T00%3A26%3A15.364Z',
     },
     {
       name: 'Jane Doe',
