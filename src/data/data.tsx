@@ -74,24 +74,22 @@ export const heroData: Hero = {
   name: `Andrew Venenga.`,
   description: (
     <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Welcome! This is the begining to my website resume! Please be advised this is a work in progress and not yet
-        completed. TODO: Add more projects
-      </p>
       <LazyLoad height={200}>
         <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-          I'm an Iowa based <strong className="text-stone-100">System's Administrator</strong> and{' '}
-          <strong className="text-stone-100">Software Developer</strong>. I currently working at{' '}
-          <strong className="text-stone-100">Aelieve Digital Marketing</strong> as the Director of IT, running Aelieve's
-          MSP Division, while maintaining Aelieve Digital Marketing Client's website and automations.
+          Welcome! This is the beginning to my website resume! TODO: Add more projects
         </p>
       </LazyLoad>
       <LazyLoad height={200}>
         <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-          In my free time time, you can catch me streaming on{' '}
-          <strong className="text-stone-100">My MultiCasting Platform</strong>, sharpening my{' '}
-          <strong className="text-stone-100">DevOp's Skills</strong>, or finding new adventures with my{' '}
-          <strong className="text-stone-100">Friends and Family</strong>.
+          I'm an Iowa based <strong className="text-stone-100">System's Administrator</strong> and{' '}
+          <strong className="text-stone-100">Software Developer</strong>.
+        </p>
+      </LazyLoad>
+      <LazyLoad height={200}>
+        <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+          I am currently working at{' '}
+          <strong className="text-stone-100">Aelieve Digital Marketing</strong> as the Director of IT, running Aelieve's
+          MSP Division, client's websites, automatons and databases.
         </p>
       </LazyLoad>
     </>
@@ -210,12 +208,12 @@ export const skills: SkillGroup[] = [
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
-  {
-    title: 'Web Crawler',
-    description: 'C# Web Crawler designed to scrape google maps data for specific industries and locations.',
-    url: 'https://github.com/venengaandrew/Web-Crawler',
-    image: porfolioImage1,
-  },
+  // {
+  //   title: 'Web Crawler',
+  //   description: 'C# Web Crawler designed to scrape google maps data for specific industries and locations.',
+  //   url: 'https://github.com/venengaandrew/Web-Crawler',
+  //   image: porfolioImage1,
+  // },
   {
     title: 'Live Streaming Website',
     description: 'Live Streaming site built with React and Node.js, this is a work in progress and not yet completed.',
@@ -324,7 +322,12 @@ export const experience: TimelineItem[] = [
         Empowering small to midsized organizations to leverage technology in the evolution of their digital brand and
         marketing strategy. Developed, designed and delivered the Aelieve on-premise digital marketing platform and
         DevOps process to support the customer’s digital transformation. Led team to maintain and onboard new customers
-        delivering the highest level of customer service while catering to their individual needs and customizations
+        delivering the highest level of customer service while catering to their individual needs and customizations.
+
+        As IT Director, I would maintain and innovate on Aelieve's webserver hosting on various VPS platforms. This would
+        also include maintaining wordpress instances. Depending on the client, we would also have custom PHP pluggins. Most 
+        custom pluggins during my time, was developed and maintained by myself.
+        I have additionally completed many internal software development projects
       </p>
     ),
   },
