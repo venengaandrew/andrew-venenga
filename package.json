@@ -61,7 +61,7 @@
     "eslint-plugin-simple-import-sort": "^12.1.0",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
     "postcss": "^8.4.39",
-    "postcss-preset-env": "^9.5.15",
+    "postcss-preset-env": "^10.0.5",
     "prettier": "^3.3.2",
     "prettier-plugin-tailwindcss": "^0.6.5",
     "sass": "^1.77.6",
