@@ -7,7 +7,6 @@ import {
   MapIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
-import LazyLoad from 'react-lazyload';
 
 import GithubIcon from '../components/Icon/GithubIcon';
 // import InstagramIcon from '../components/Icon/InstagramIcon';
@@ -73,26 +72,19 @@ export const heroData: Hero = {
   imageSrc: heroImage,
   name: `Andrew Venenga.`,
   description: (
-    <>
-      <LazyLoad height={200}>
-        <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-          Welcome! This is the beginning to my website resume! TODO: Add more projects
+    <div className="space-y-4 text-base text-stone-200 md:text-lg">
+      {/* Combined content into a single element to reduce DOM nodes */}
+      <div>
+        <p className="mb-2">
+          Iowa based <span className="text-stone-100 font-semibold">System's Administrator</span> and{' '}
+          <span className="text-stone-100 font-semibold">Software Developer</span>.
         </p>
-      </LazyLoad>
-      <LazyLoad height={200}>
-        <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-          I'm an Iowa based <strong className="text-stone-100">System's Administrator</strong> and{' '}
-          <strong className="text-stone-100">Software Developer</strong>.
-        </p>
-      </LazyLoad>
-      <LazyLoad height={200}>
-        <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-          I am currently working at{' '}
-          <strong className="text-stone-100">Aelieve Digital Marketing</strong> as the Director of IT, running Aelieve's
+        <p>
+          <span className="text-stone-100 font-semibold">Aelieve Digital Marketing's</span> Director of IT, running Aelieve's
           MSP Division, client's websites, automatons and databases.
         </p>
-      </LazyLoad>
-    </>
+      </div>
+    </div>
   ),
   actions: [
     {
@@ -117,12 +109,12 @@ export const aboutData: About = {
   description: `Self taught developer with a passion for learning new technologies and building useful products.
   I have a strong background in systems administration and software development. I am currently working as the Director of IT Operations at Aelieve Digital Marketing,
   where I am responsible for the development and maintenance of Aelieve's on-premise digital marketing platform and DevOps process.
-  I am also responsible for the maintenance and onboarding of new customers to the platform.
+  I am also responsible for the maintenance and onboarding of new customers to Aelieve's platform.
   I am a strong believer in the power of open source software and have contributed to a number of projects over the years.
   I am always looking for new opportunities to learn and grow as a developer.`,
   aboutItems: [
     {label: 'Location', text: 'Washington, IA', Icon: MapIcon},
-    {label: 'Age', text: '23', Icon: CalendarIcon},
+    {label: 'Age', text: '24', Icon: CalendarIcon},
     {label: 'Nationality', text: 'American / German', Icon: FlagIcon},
     {label: 'Interests', text: 'PC Building, Live Streaming, Motorcycles, Hiking', Icon: SparklesIcon},
     {label: 'Study', text: 'Indian Hills Community College, Ottumwa, IA', Icon: AcademicCapIcon},
@@ -172,12 +164,12 @@ export const skills: SkillGroup[] = [
     name: 'Backend development',
     skills: [
       {
-        name: 'Node.js',
+        name: 'PostgresSQL',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'Node.js',
+        level: 6,
       },
       {
         name: 'Golang',
@@ -343,7 +335,7 @@ export const testimonial: TestimonialSection = {
       name: 'Carolyn Simon, SHRM-CP | Former HR Manager at Aelieve Digital Marketing',
       text: 'Overall, Andrew is a dedicated and hardworking professional who is committed to delivering exceptional results. His ability to problem solve, handle a new business, multitask, and his passion for his work make him a valuable asset to any team. I wholeheartedly recommend him for any role in IT operations or data anlysis.',
       image:
-        'https://ijjzlsyfrxnrmjtxsvvj.supabase.co/storage/v1/object/public/andrew-venenga/carolyn-linkedin.jpeg?t=2024-06-30T00%3A26%3A15.364Z',
+        'https://mhtwfjzphqoqvuvcaaar.supabase.co/storage/v1/object/public/andrew-venenga/carolyn-linkedin.jpeg',
     },
     {
       name: 'Jane Doe',
