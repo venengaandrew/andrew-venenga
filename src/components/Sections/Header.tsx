@@ -98,7 +98,7 @@ const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}
                   leaveFrom="translate-x-0"
                   leaveTo="translate-x-full">
                   <div className="relative w-screen max-w-md">
-                    <div className="h-full flex flex-col py-6 bg-stone-800 shadow-xl overflow-y-scroll">
+                    <div className="flex h-full flex-col overflow-y-scroll bg-stone-800 py-6 shadow-xl">
                       <nav className="mt-5 flex flex-col gap-y-2 px-2">
                         {navSections.map(section => (
                           <NavItem
@@ -141,5 +141,10 @@ const NavItem: FC<{
   );
 });
 
+// Add displayName to all memo components
 Header.displayName = 'Header';
+DesktopNav.displayName = 'DesktopNav';
+MobileNav.displayName = 'MobileNav';
+NavItem.displayName = 'NavItem';
+
 export default Header;
