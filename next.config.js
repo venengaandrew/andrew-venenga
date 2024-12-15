@@ -1,5 +1,6 @@
 /* eslint-env node */
 const nextConfig = {
+  // Webpack configuration
   webpack: config => {
     const oneOfRule = config.module.rules.find(rule => rule.oneOf);
     const tsRules = oneOfRule.oneOf.filter(rule => rule.test && rule.test.toString().includes('tsx|ts'));
@@ -8,18 +9,17 @@ const nextConfig = {
     });
     return config;
   },
-  compiler: {
-    removeConsole: true,
-  },
+  
+  // Core configuration
   compress: true,
   generateEtags: true,
   pageExtensions: ['tsx', 'mdx', 'ts'],
   poweredByHeader: false,
   productionBrowserSourceMaps: false,
   reactStrictMode: true,
-  swcMinify: true,
   trailingSlash: false,
-  optimizeFonts: true,
+  
+  // Image optimization
   images: {
     domains: ['images.unsplash.com', 'source.unsplash.com'],
     formats: ['image/webp'],
@@ -29,14 +29,17 @@ const nextConfig = {
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
+  
+  // Experimental features (only keeping supported ones)
   experimental: {
     optimizeCss: true,
     scrollRestoration: true,
-    legacyBrowsers: false,
-    browsersListForSwc: true,
-    gzipSize: true,
+  },
+  
+  // Compiler options
+  compiler: {
+    removeConsole: true,
   },
 };
 
-// eslint-disable-next-line no-undef
 module.exports = nextConfig;
