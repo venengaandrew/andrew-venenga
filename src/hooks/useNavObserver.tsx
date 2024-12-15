@@ -3,7 +3,7 @@ import {useEffect} from 'react';
 import {headerID} from '../components/Sections/Header';
 import {SectionId} from '../data/data';
 
-export const useNavObserver = (selectors: string, handler: (section: SectionId | null) => void) => {
+export function useNavObserver(selectors: string, handler: (section: SectionId | null) => void) {
   useEffect(() => {
     // Get all sections
     const headings = document.querySelectorAll(selectors);
@@ -47,13 +47,15 @@ export const useNavObserver = (selectors: string, handler: (section: SectionId |
         rootMargin: '0px 0px -70% 0px',
       },
     );
+
     // Observe all the Sections
     headings.forEach(section => {
       observer.observe(section);
     });
+
     // Cleanup
     return () => {
       observer.disconnect();
     };
-  }, []); // Dependency here is the post content.
-};
+  }, [selectors, handler]); // Added proper dependencies
+}
