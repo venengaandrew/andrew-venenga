@@ -1,19 +1,15 @@
 /* eslint-env node */
-
-// https://github.com/vercel/next.js/blob/master/packages/next/next-server/server/config.ts
 const nextConfig = {
   webpack: config => {
     const oneOfRule = config.module.rules.find(rule => rule.oneOf);
-
-    // Next 12 has multiple TS loaders, and we need to update all of them.
     const tsRules = oneOfRule.oneOf.filter(rule => rule.test && rule.test.toString().includes('tsx|ts'));
-
     tsRules.forEach(rule => {
-      // eslint-disable-next-line no-param-reassign
       rule.include = undefined;
     });
-
     return config;
+  },
+  compiler: {
+    removeConsole: true,
   },
   compress: true,
   generateEtags: true,
@@ -23,9 +19,24 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   trailingSlash: false,
+  optimizeFonts: true,
   images: {
     domains: ['images.unsplash.com', 'source.unsplash.com'],
+    formats: ['image/webp'],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256],
+    minimumCacheTTL: 60,
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+  },
+  experimental: {
+    optimizeCss: true,
+    scrollRestoration: true,
+    legacyBrowsers: false,
+    browsersListForSwc: true,
+    gzipSize: true,
   },
 };
 
+// eslint-disable-next-line no-undef
 module.exports = nextConfig;

@@ -11,41 +11,71 @@ const MyApp = memo(({Component, pageProps}: AppProps): JSX.Element => {
   return (
     <>
       <Head>
-        <script
+        {/* Critical CSS */}
+        <style
           dangerouslySetInnerHTML={{
             __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-
-              gtag('config', 'G-MSSPKY60PN', {
-                page_path: window.location.pathname,
-              });
+              .critical-heading {
+                opacity: 1 !important;
+                transform: none !important;
+              }
+              /* Optimize CLS */
+              * {
+                text-rendering: optimizeLegibility;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+              }
             `,
           }}
         />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-                (function(c,l,a,r,i,t,y){
-                    c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-                    t=l.createElement(r);
-                    t.async=1;
-                    t.src="https://www.clarity.ms/tag/"+i;
-                    y=l.getElementsByTagName(r)[0];
-                    y.parentNode.insertBefore(t,y);
-                })(window, document, "clarity", "script", "kmvelopnio");`,
-          }}
-        />
-        ;<title>Welcome!</title>
         <meta content="initial-scale=1, width=device-width" name="viewport" />
+        <title>Welcome!</title>
       </Head>
-      {/* Global Site Tag (gtag.js) - Google Analytics */}
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-MSSPKY60PN" strategy="afterInteractive" />
+
+      {/* Analytics scripts with performance optimization */}
+      <Script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-MSSPKY60PN', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+        id="google-analytics"
+        strategy="lazyOnload"
+      />
+      <Script
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function(c,l,a,r,i,t,y){
+                c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+                t=l.createElement(r);
+                t.async=1;
+                t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];
+                y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "kmvelopnio");
+          `,
+        }}
+        id="ms-clarity"
+        strategy="lazyOnload"
+      />
+
+      {/* Google Analytics tag */}
+      <Script 
+        src="https://www.googletagmanager.com/gtag/js?id=G-MSSPKY60PN" 
+        strategy="lazyOnload" 
+      />
+
       <Component {...pageProps} />
       <SpeedInsights />
     </>
   );
 });
 
+MyApp.displayName = 'MyApp';
 export default MyApp;
