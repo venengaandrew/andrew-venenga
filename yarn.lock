@@ -466,6 +466,11 @@
   resolved "https://registry.yarnpkg.com/@eslint/compat/-/compat-1.1.0.tgz#fdc7d19a66820770bf58ced0342153769d8686f0"
   integrity sha512-s9Wi/p25+KbzxKlDm3VshQdImhWk+cbdblhwGNnyCU5lpSwtWa4v7VQCxSki0FAUrGA3s8nCWgYzAH41mwQVKQ==
 
+"@eslint/compat@^1.2.5":
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@eslint/compat/-/compat-1.2.6.tgz#747ad2bde060582873cb486e03bfdf2945f0868d"
+  integrity sha512-k7HNCqApoDHM6XzT30zGoETj+D+uUcZUb+IVAJmar3u6bvHf7hhHJcWx09QHj4/a2qrKZMWU0E16tvkiAdv06Q==
+
 "@eslint/config-array@^0.17.0":
   version "0.17.0"
   resolved "https://registry.yarnpkg.com/@eslint/config-array/-/config-array-0.17.0.tgz#ff305e1ee618a00e6e5d0485454c8d92d94a860d"
