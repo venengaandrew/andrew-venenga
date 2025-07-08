@@ -4,7 +4,6 @@ import '../globalStyles.scss';
 import {SpeedInsights} from '@vercel/speed-insights/next';
 import type {AppProps} from 'next/app';
 import Head from 'next/head';
-import Script from 'next/script';
 import {memo} from 'react';
 
 const MyApp = memo(({Component, pageProps}: AppProps): JSX.Element => {
@@ -31,46 +30,6 @@ const MyApp = memo(({Component, pageProps}: AppProps): JSX.Element => {
         <meta content="initial-scale=1, width=device-width" name="viewport" />
         <title>Welcome!</title>
       </Head>
-
-      {/* Analytics scripts with performance optimization */}
-      <Script
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-MSSPKY60PN', {
-              page_path: window.location.pathname,
-            });
-          `,
-        }}
-        id="google-analytics"
-        strategy="lazyOnload"
-      />
-      <Script
-        dangerouslySetInnerHTML={{
-          __html: `
-            (function(c,l,a,r,i,t,y){
-                c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-                t=l.createElement(r);
-                t.async=1;
-                t.src="https://www.clarity.ms/tag/"+i;
-                y=l.getElementsByTagName(r)[0];
-                y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "kmvelopnio");
-          `,
-        }}
-        id="ms-clarity"
-        strategy="lazyOnload"
-      />
-
-      {/* Google Analytics tag */}
-      <Script 
-        src="https://www.googletagmanager.com/gtag/js?id=G-MSSPKY60PN" 
-        strategy="lazyOnload" 
-      />
-
       <Component {...pageProps} />
       <SpeedInsights />
     </>
