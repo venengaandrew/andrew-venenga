@@ -31,8 +31,6 @@ const MyApp = memo(({Component, pageProps}: AppProps): JSX.Element => {
         <meta content="initial-scale=1, width=device-width" name="viewport" />
         <title>Welcome!</title>
       </Head>
-      
-
       <Component {...pageProps} />
       <SpeedInsights />
     </>
