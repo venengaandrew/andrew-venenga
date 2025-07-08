@@ -4,7 +4,6 @@ import '../globalStyles.scss';
 import {SpeedInsights} from '@vercel/speed-insights/next';
 import type {AppProps} from 'next/app';
 import Head from 'next/head';
-import Script from 'next/script';
 import {memo} from 'react';
 
 const MyApp = memo(({Component, pageProps}: AppProps): JSX.Element => {
