@@ -36,21 +36,6 @@ const MyApp = memo(({Component, pageProps}: AppProps): JSX.Element => {
       <Script
         dangerouslySetInnerHTML={{
           __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-MSSPKY60PN', {
-              page_path: window.location.pathname,
-            });
-          `,
-        }}
-        id="google-analytics"
-        strategy="lazyOnload"
-      />
-      <Script
-        dangerouslySetInnerHTML={{
-          __html: `
             (function(c,l,a,r,i,t,y){
                 c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
                 t=l.createElement(r);
@@ -66,10 +51,7 @@ const MyApp = memo(({Component, pageProps}: AppProps): JSX.Element => {
       />
 
       {/* Google Analytics tag */}
-      <Script 
-        src="https://www.googletagmanager.com/gtag/js?id=G-MSSPKY60PN" 
-        strategy="lazyOnload" 
-      />
+      
 
       <Component {...pageProps} />
       <SpeedInsights />
