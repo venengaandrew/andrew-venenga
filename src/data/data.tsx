@@ -76,12 +76,11 @@ export const heroData: Hero = {
       {/* Combined content into a single element to reduce DOM nodes */}
       <div>
         <p className="mb-2">
-          Iowa based <span className="text-stone-100 font-semibold">System's Administrator</span> and{' '}
+          Iowa based <span className="text-stone-100 font-semibold">UCass Engineer, System's Administrator</span> and{' '}
           <span className="text-stone-100 font-semibold">Software Developer</span>.
         </p>
         <p>
-          <span className="text-stone-100 font-semibold">Aelieve Digital Marketing's</span> Director of IT, running Aelieve's
-          MSP Division, client's websites, automatons and databases.
+          <span className="text-stone-100 font-semibold">Platinum Information Services</span> UCass Engineer, Reimagining Platinum's approach to UCass, benifiting both the company and its clients.
         </p>
       </div>
     </div>
@@ -107,18 +106,16 @@ export const heroData: Hero = {
 export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `Self taught developer with a passion for learning new technologies and building useful products.
-  I have a strong background in systems administration and software development. I am currently working as the Director of IT Operations at Aelieve Digital Marketing,
-  where I am responsible for the development and maintenance of Aelieve's on-premise digital marketing platform and DevOps process.
-  I am also responsible for the maintenance and onboarding of new customers to Aelieve's platform.
-  I am a strong believer in the power of open source software and have contributed to a number of projects over the years.
-  I am always looking for new opportunities to learn and grow as a developer.`,
+  I have a strong background in systems administration and software development. I am currently working as a UCass Engineer at Platinum Information Services,
+  where I am responsible for the design, deployment, and maintenance of UCass systems. I have a strong background in systems administration and software development, with a focus on web and mobile development.
+  I've grown proud of my 'jack of all trades' mentality, and I am always looking for new challenges to tackle.`,
   aboutItems: [
     {label: 'Location', text: 'Washington, IA', Icon: MapIcon},
     {label: 'Age', text: '24', Icon: CalendarIcon},
     {label: 'Nationality', text: 'American / German', Icon: FlagIcon},
     {label: 'Interests', text: 'PC Building, Live Streaming, Motorcycles, Hiking', Icon: SparklesIcon},
     {label: 'Study', text: 'Indian Hills Community College, Ottumwa, IA', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Aelieve Digital Marketing', Icon: BuildingOffice2Icon},
+    {label: 'Employment', text: 'Platinum Information Services', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -306,7 +303,19 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'April 2022 - Present',
+    date: 'August 2025 - Present',
+    location: 'Platinum Information Services',
+    title: 'UCass Engineer',
+    content: (
+      <p>
+        As a UCass Engineer, I am responsible for the design, deployment, and maintenance of UCass systems. I work
+        closely with clients to understand their needs and provide solutions that meet their requirements. I also
+        collaborate with other engineers to ensure that our systems are reliable and scalable.
+      </p>
+    ),
+  },
+  {
+    date: 'April 2022 - July 2025',
     location: 'Aelieve Digital Markgeting',
     title: 'Director of IT Operations',
     content: (
