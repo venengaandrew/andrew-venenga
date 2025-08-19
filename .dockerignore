@@ -1,0 +1,26 @@
+# Node
+node_modules
+.yarn
+.pnp.*
+
+# Next/build
+.next
+out
+build-tsc
+dist
+
+# Local env
+.env
+.env.local
+.env.*.local
+
+# Misc
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+coverage
+
+# Git
+.git
+.gitignore
